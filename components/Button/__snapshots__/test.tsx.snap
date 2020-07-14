@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button renders the button as expected 1`] = `
+<button
+  className="Button__StyledButton-sc-1gv6g6a-0 borBfz"
+  onClick={[Function]}
+  type="button"
+>
+  Hello
+</button>
+`;

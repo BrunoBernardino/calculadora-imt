@@ -1,0 +1,58 @@
+@import '__variables';
+
+.main {
+  &__section {
+    margin: 2rem auto;
+    padding-bottom: 2rem;
+    border-bottom: 5px solid $color-pink;
+
+    &:last-of-type {
+      border: none;
+    }
+
+    &--no-border {
+      border: none;
+      padding-bottom: 0;
+    }
+
+    &--small {
+      border: none;
+      background: $color-white;
+      padding: 0.5rem 1rem;
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+
+    strong {
+      font-weight: bold;
+    }
+
+    &--small {
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__description {
+    font-size: 1rem;
+    line-height: 1.7rem;
+    margin-bottom: 1rem;
+
+    strong {
+      font-weight: bold;
+    }
+
+    &--small {
+      font-size: 0.85rem;
+      line-height: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+}

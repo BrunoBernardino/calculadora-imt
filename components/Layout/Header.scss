@@ -1,0 +1,25 @@
+@import '__variables';
+
+.Header {
+  display: block;
+  text-align: center;
+  padding: 1.3rem 0;
+
+  @media #{$bigger-screen} {
+    @include flex-spaced;
+  }
+
+  &__title {
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 100;
+
+    a {
+      text-decoration: none;
+
+      img {
+        width: 120px;
+      }
+    }
+  }
+}
