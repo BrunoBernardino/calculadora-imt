@@ -4,15 +4,15 @@
 
 Calculadora IMT, para Crédito Habitação em Portugal. Simulação de valores a pagar para empréstimo imobiliário.
 
-Disponível em [calculadora-imt.brn.sh](https://calculadora-imt.brn.sh).
+Disponível em [calculadora-imt.onbrn.com](https://calculadora-imt.onbrn.com).
 
 ## Development
 
 ```bash
-make install # installs dependencies
-make start # starts the app
-make pretty # prettifies the code
-make test # runs linting and tests
-make test/update # runs tests, updating snapshots
-make deploy # deploys to calculadora-imt.brn.sh (requires `vercel` to be installed globally)
+make install  # installs dependencies
+make start  # starts the app
+make pretty  # prettifies the code
+make test  # runs linting and tests
+make test/update  # runs tests, updating snapshots
+make deploy  # deploys to calculadora-imt.onbrn.com (requires `vercel` to be installed globally)
 ```
