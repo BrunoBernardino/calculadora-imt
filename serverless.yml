@@ -2,9 +2,11 @@ service:
   name: brn-calculadora-imt
 
 myNextAppplication:
-  component: "@sls-next/serverless-component@1.18.0"
+  component: "@sls-next/serverless-component@3.4.0"
   inputs:
     domain: ["calculadora-imt", "onbrn.com"]
+    bucketName: brn-calculadora-imt
+    bucketRegion: us-east-1
     build:
       env:
         NODE_PATH: "/"

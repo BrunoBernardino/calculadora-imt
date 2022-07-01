@@ -48,10 +48,9 @@ export default class MyDocument extends Document {
           <Main />
           <NextScript />
           <script
-            src="https://cdn.usefathom.com/script.js"
-            // @ts-ignore
-            site="PSGEQCPO"
             defer
+            data-domain="calculadora-imt.onbrn.com"
+            src="https://plausible.io/js/plausible.js"
           />
         </body>
       </Html>
