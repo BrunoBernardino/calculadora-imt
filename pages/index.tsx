@@ -1,5 +1,6 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import styled from 'styled-components';
+import axios from 'axios';
 
 import Layout from 'components/Layout';
 import Button from 'components/Button';
@@ -226,6 +227,34 @@ const IndexPage = () => {
       </div>
     </Layout>
   );
+};
+
+export const getServerSideProps = async ({ req }: { req: Request }) => {
+  // @ts-ignore it does exist
+  if (req && req.headers && !req.headers.host.startsWith('localhost')) {
+    const baseUrl = 'https://calculadora-imt.onbrn.com';
+    const pathname = req.url;
+
+    try {
+      await axios.post('https://stats.onbrn.com/api/event', {
+        headers: {
+          'content-type': 'application/json; charset=utf-8',
+        },
+        body: {
+          domain: baseUrl.replace('https://', ''),
+          name: 'pageview',
+          url: `${baseUrl}${pathname}`,
+        },
+      });
+    } catch (error) {
+      console.log('Failed to log pageview');
+      console.error(error);
+    }
+  }
+
+  return {
+    props: {},
+  };
 };
 
 export default IndexPage;

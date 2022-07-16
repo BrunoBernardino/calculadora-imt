@@ -47,11 +47,6 @@ export default class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          <script
-            defer
-            data-domain="calculadora-imt.onbrn.com"
-            src="https://plausible.io/js/plausible.js"
-          />
         </body>
       </Html>
     );
